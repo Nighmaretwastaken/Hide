@@ -23,7 +23,7 @@ local ct = {}
 
 char.Archivable = true
 local reanim = char:Clone()
-reanim.Name = 'Tangerex 'vr'
+reanim.Name = 'vr'
 fl=Instance.new('Folder',char) fl.Name ='Tangerex'
 reanim.Animate.Disabled=true
 char.HumanoidRootPart:Destroy()
