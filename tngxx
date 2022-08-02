@@ -441,7 +441,7 @@ if sh then
 fp.CFrame=CFrame.new(m.Hit.p)
 char['Right Leg'].Position=fp.Position
 else
-fp.CFrame=char.Torso.CFrame*CFrame.new(0,0,0)
+fp.CFrame=char.Torso.CFrame*CFrame.new(0,-8,0)
 char['Right Leg'].Position=fp.Position
 end
 end))
