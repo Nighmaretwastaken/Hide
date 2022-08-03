@@ -393,7 +393,7 @@ end
 end
 
 for i,v in next, char:GetDescendants() do
-if v:IsA('BasePart') and v.Name ~= 'Right Leg' and v.Name ~= 'Head' and v.Parent == char then
+if v:IsA('BasePart') and v.Name ~= 'Right Arm' and v.Name ~= 'Head' and v.Parent == char then
 create(v,reanim[v.Name])
 end
 end
@@ -406,13 +406,13 @@ f.MaxTorque=Vector3.new(9e9*10,0,0)
 return f
 end
 
-Pos(char['Right Leg'],reanim['Torso'])
-fliiiin=flinger(char['Right Leg'])
+Pos(char['Right Arm'],reanim['Torso'])
+fliiiin=flinger(char['Right Arm'])
 
 char['Pal Hair'].Handle:BreakJoints()
 char['Pal Hair'].Handle.Mesh:Destroy()
 
-create(char['Pal Hair'].Handle,reanim['Right Leg'],Vector3.new(),Vector3.new(90,0,0))
+create(char['Pal Hair'].Handle,reanim['Right Arm'],Vector3.new(),Vector3.new(90,0,0))
 
 reanim.Animate.Disabled=true
 
@@ -439,10 +439,10 @@ te(ct,srv.Heartbeat:Connect(function()
 m.TargetFilter=char
 if sh then
 fp.CFrame=CFrame.new(m.Hit.p)
-char['Right Leg'].Position=fp.Position
+char['Right Arm'].Position=fp.Position
 else
 fp.CFrame=char.Torso.CFrame*CFrame.new(0,-8,0)
-char['Right Leg'].Position=fp.Position
+char['Right Arm'].Position=fp.Position
 end
 end))
 
