@@ -8,6 +8,11 @@ fall = "no",
 walk = "no",
 run = "no"
 }
+
+getfenv().sine = 1
+
+function a:Reanimate(method,clickfling)
+local clickfling = clickfling or false
 if method == "BR" then
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") then 
@@ -188,10 +193,6 @@ v:Stop()
 bot.Animate:Remove()
 end
 
-getfenv().sine = 1
-
-function a:Reanimate(method,clickfling)
-local clickfling = clickfling or false
 elseif method == "SP" then
 HumanDied = false
 
